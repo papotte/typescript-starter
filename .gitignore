@@ -1,7 +1,7 @@
 ### NPM Generated data
 /node_modules/*
 node_modules/*
-lib
+dist
 coverage
 
 ### IntelliJ IDEA ###
@@ -31,3 +31,5 @@ coverage
 ## logs
 *.log
 *.lck
+
+*.DS_Store
