@@ -9,24 +9,12 @@
 </head>
 <body>
 <div class="header">
-  <img src="./assets/logo.svg" style="width: 50px; margin-top: 10px; margin-left: 15px;" class="logo">
-  <p class="name">Webpack Config
-  <p>
+  <h1 class="title">Typescript Starter</h1>
 </div>
-
-<div class="content">
-  <div class="label">
-    <h2>Yet another Webpack 4 config</h2>
-  </div>
-  <div class="containter">
-
-  </div>
-  <p>Entry point: ./src/index.ts</p>
-  <p>Output path: ./docs/ (for GutHub pages)</p>
-  <p>Development: npm run start</p>
-  <p>Production: npm run build</p>
+<div class="toolbar">
+  <button id="submit" type="submit" class="button primary my-md">Test</button>
 </div>
-
+<div id="content"></div>
 <script src="<%= htmlWebpackPlugin.files.chunks.vendor.entry %>"></script>
 <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>

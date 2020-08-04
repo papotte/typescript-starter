@@ -1,4 +1,7 @@
-import * as PIXI from "pixi.js"
+import {Application} from 'pixi.js'
+import './style/main.scss'
+
+const content: HTMLElement = <HTMLElement>document.getElementById('content')
 
 const component: () => HTMLDivElement = () => {
   const element = document.createElement('div')
@@ -9,15 +12,15 @@ const component: () => HTMLDivElement = () => {
   return element
 }
 
-document.body.appendChild(component())
+content.appendChild(component())
 
-let app = new PIXI.Application({
-  antialias: true,    // default: false
-  transparent: false, // default: false
-  resolution: 1,      // default: 1
-  resizeTo: window
-});
-app.renderer.backgroundColor = 0x061639;
-app.renderer.view.style.position = "absolute";
-app.renderer.view.style.display = "block";
-document.body.appendChild(app.view);
+const app = new Application({
+  antialias: true,
+  transparent: false,
+  resolution: 1,
+  resizeTo: window,
+})
+app.renderer.backgroundColor = 0x061639
+app.renderer.view.style.position = 'absolute'
+app.renderer.view.style.display = 'block'
+content.appendChild(app.view)

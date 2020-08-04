@@ -7,8 +7,6 @@ coverage
 ### IntelliJ IDEA ###
 !.idea/
 .idea/*
-!.idea/codeStyles
-!.idea/inspectionProfiles
 *.iws
 *.iml
 *.ipr
