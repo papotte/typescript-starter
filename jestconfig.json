@@ -20,9 +20,8 @@
     }
   },
   "coveragePathIgnorePatterns": [
-    "<rootDir>/src/interfaces/",
     "<rootDir>/test/",
     "<rootDir>/node_modules/",
-    "<rootDir>/lib/"
+    "<rootDir>/dist/"
   ]
 }

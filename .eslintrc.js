@@ -5,7 +5,7 @@ module.exports = {
     node: true,
   },
   extends: [
-    'airbnb-typescript/base'
+    'airbnb-typescript/base',
   ],
   plugins: [
     '@typescript-eslint',
@@ -16,7 +16,7 @@ module.exports = {
     'coverage',
     '.eslintrc.js',
     '*.snippet.ts',
-    '*.config.js'
+    '*.config.js',
   ],
   globals: {
     Atomics: 'readonly',
@@ -27,11 +27,7 @@ module.exports = {
     project: './tsconfig.eslint.json',
   },
   rules: {
-    'comma-dangle': 'off',
     'max-len': ['error', {code: 120}],
-    'no-case-declarations': 'off',
-    'no-console': 'off',
-    'no-param-reassign': 'off',
     'no-plusplus': 'off',
     'object-curly-newline': 'off',
     'object-curly-spacing': 'off',
@@ -41,4 +37,4 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/semi': ['error', 'never']
   },
-};
+}
